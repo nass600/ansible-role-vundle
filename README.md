@@ -1,6 +1,6 @@
 # Ansible Role - Vundle
 
-[![Ansible Role](https://img.shields.io/ansible/role/15428.svg)](https://galaxy.ansible.com/nass600/powerline/)
+[![Ansible Role](https://img.shields.io/ansible/role/15483.svg)](https://galaxy.ansible.com/nass600/vundle/)
 [![Build Status](https://travis-ci.org/nass600/ansible-role-vundle.svg?branch=master)](https://travis-ci.org/nass600/ansible-role-vundle)
 
 Installs Vundle and the Plugins listed on your .vimrc file
