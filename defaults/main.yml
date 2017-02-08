@@ -1,0 +1,3 @@
+---
+vundle_config_dir: "~/.vim"
+vundle_repo: "git://github.com/VundleVim/Vundle.vim.git"

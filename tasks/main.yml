@@ -1,0 +1,29 @@
+---
+- name: Ensure git is installed
+  become: true
+  apt:
+    pkg: "git"
+    state: present
+
+- name: Make Vim directory
+  become: no
+  file:
+    path: "{{ vundle_config_dir }}"
+    state: directory
+
+- name: Make Vim bundle directory
+  become: no
+  file:
+    path: "{{ vundle_config_dir }}/bundle"
+    state: directory
+
+- name: Clone vundle
+  become: no
+  git:
+    repo: "{{ vundle_repo }}"
+    dest: "{{ vundle_config_dir }}/bundle/Vundle.vim"
+    update: no
+
+- name: Install Vim plugins
+  become_user: "{{ user }}"
+  command: "vim +PluginInstall +qal"
