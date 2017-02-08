@@ -22,7 +22,7 @@
   git:
     repo: "{{ vundle_repo }}"
     dest: "{{ vundle_config_dir }}/bundle/Vundle.vim"
-    update: no
+    accept_hostkey: no
 
 - name: Install Vim plugins
   become_user: "{{ user }}"
