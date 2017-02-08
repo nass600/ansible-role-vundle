@@ -10,7 +10,7 @@ install:
   - sudo pip install ansible
 
   # Add ansible.cfg to pick up roles path.
-  - "{ echo '[defaults]'; echo 'roles_path = ../:../roles:./roles'; echo 'host_key_checking = False';} >> ansible.cfg"
+  - "{ echo '[defaults]'; echo 'roles_path = ../:../roles:./roles'; } >> ansible.cfg"
 
   # Add a hosts file.
   - sudo mkdir -p /etc/ansible
@@ -22,10 +22,10 @@ install:
 
 script:
   # Basic role syntax check
-  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
+  - "ansible-playbook tests/test.yml--syntax-check"
 
   # Test the playbook.
-  - ansible-playbook tests/test.yml -i tests/inventory
+  - "ansible-playbook tests/test.yml"
 
   # Test the playbook's idempotence.
   - idempotence=$(mktemp)
