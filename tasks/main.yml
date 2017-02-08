@@ -25,5 +25,5 @@
     accept_hostkey: no
 
 - name: Install Vim plugins
-  become_user: "{{ user }}"
+  become: true
   command: "vim +PluginInstall +qal"
