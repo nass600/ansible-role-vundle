@@ -10,7 +10,7 @@ install:
   - sudo pip install ansible
 
   # Add ansible.cfg to pick up roles path.
-  - "{ echo '[defaults]'; echo 'roles_path = ../:../roles:./roles'; } >> ansible.cfg"
+  - "{ echo '[defaults]'; echo 'roles_path = ../:../roles:./roles'; echo 'host_key_checking = False'} >> ansible.cfg"
 
   # Add a hosts file.
   - sudo mkdir -p /etc/ansible
