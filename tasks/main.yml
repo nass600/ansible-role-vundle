@@ -25,5 +25,5 @@
     accept_hostkey: no
 
 - name: Install Vim plugins
-  become: true
-  command: "vim +PluginInstall +qal"
+  become: "{{ vundle_user }}"
+  command: "vim +PluginInstall +qall"

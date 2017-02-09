@@ -11,14 +11,24 @@ You must have your `.vimrc` file already downloaded to your filesystem.
 
 # Role Variables
 
+    vundle_user: ""
+
+User to execute plugins installation
+
+    vundle_config_dir: "~/.vim"
+
+Where to clone all the plugins defined in your `.vimrc`
+
+    vundle_repo: "git://github.com/VundleVim/Vundle.vim.git"
+
+Repo used for Vundle installation
 
 
 # Dependencies
 
-None.
+You must have your `.vimrc` file in your home directory.
 
-Example Playbook
-----------------
+# Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
@@ -26,12 +36,12 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - { role: nass600.vundle }
 
-License
--------
 
-BSD
+## License
 
-Author Information
-------------------
+[MIT](/src/master/LICENSE)
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+## Author Information
+
+Ignacio Velazquez - [http://ignaciovelazquez.es]()
