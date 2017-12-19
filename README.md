@@ -1,7 +1,9 @@
 # Ansible Role - Vundle
 
 [![Ansible Role](https://img.shields.io/ansible/role/15483.svg)](https://galaxy.ansible.com/nass600/vundle/)
+[![GitHub tag](https://img.shields.io/github/tag/nass600/ansible-role-vundle.svg)]()
 [![Build Status](https://travis-ci.org/nass600/ansible-role-vundle.svg?branch=master)](https://travis-ci.org/nass600/ansible-role-vundle)
+[![Ansible Role](https://img.shields.io/ansible/role/d/15483.svg)](https://galaxy.ansible.com/nass600/powerline/)
 
 Installs Vundle and the Plugins listed on your .vimrc file
 
@@ -44,4 +46,4 @@ Including an example of how to use your role (for instance, with variables passe
 
 ## Author Information
 
-Ignacio Velazquez - [http://ignaciovelazquez.es]()
+[Ignacio Velazquez](http://ignaciovelazquez.es)
