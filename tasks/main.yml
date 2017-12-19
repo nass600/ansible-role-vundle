@@ -7,24 +7,27 @@
   when: ansible_os_family == "Debian"
 
 - name: Make Vim directory
-  become: no
+  become: false
   file:
     path: "{{ vundle_config_dir }}"
     state: directory
 
 - name: Make Vim bundle directory
-  become: no
+  become: false
   file:
     path: "{{ vundle_config_dir }}/bundle"
     state: directory
 
 - name: Clone vundle
-  become: no
+  become: false
   git:
     repo: "{{ vundle_repo }}"
     dest: "{{ vundle_config_dir }}/bundle/Vundle.vim"
-    accept_hostkey: no
+    accept_hostkey: "no"
+    version: "master"
 
 - name: Install Vim plugins
   become: "{{ vundle_user }}"
   command: "vim +PluginInstall +qall"
+  tags:
+    - skip_ansible_lint
