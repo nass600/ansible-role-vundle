@@ -1,4 +1,4 @@
 ---
 vundle_user: ""
 vundle_config_dir: "~/.vim"
-vundle_repo: "git://github.com/VundleVim/Vundle.vim.git"
+vundle_repo: "git@github.com:VundleVim/Vundle.vim.git"
