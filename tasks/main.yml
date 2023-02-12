@@ -27,7 +27,7 @@
     version: "master"
 
 - name: Install Vim plugins
-  become: "{{ vundle_user }}"
+  become_user: "{{ vundle_user }}"
   command: "vim +PluginInstall +qall"
   tags:
     - skip_ansible_lint
